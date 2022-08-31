@@ -2,7 +2,6 @@ import { Text, View, Image, Pressable } from "react-native";
 import styles from "./styles";
 
 const Card = (props) => {
-
   const card = props.card;
   return (
     <View
@@ -11,6 +10,7 @@ const Card = (props) => {
         height: 320,
         marginTop: 15,
         marginBottom: 20,
+        marginHorizontal: 4,
       }}
     >
       <Image

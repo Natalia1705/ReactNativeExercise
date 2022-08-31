@@ -10,6 +10,7 @@ import GroupIcon from "../../../assets/group.svg";
 import Arrow from "../../../assets/arrow.svg";
 
 import styles from "./styles";
+import Carousel from "../../components/Carousel";
 
 
 const Main = (props) => {
@@ -27,7 +28,7 @@ const Main = (props) => {
         }}
       >
         <Search />
-        <Card card={card1} />
+        <Carousel />
         <View
           style={{
             display: "flex",
