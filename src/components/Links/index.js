@@ -1,11 +1,12 @@
-import { Text, View, Image, Pressable } from "react-native";
+import { Text, View, useWindowDimensions, Pressable } from "react-native";
 import styles from "./styles";
 
 const Links = ({ text, icon }) => {
+  const width = useWindowDimensions().width;
   return (
     <View
       style={{
-        width: 335,
+        width: width - 35,
         height: 50,
         borderColor: "#E5E5E5",
         borderRadius: 11,
@@ -17,9 +18,13 @@ const Links = ({ text, icon }) => {
         marginVertical: 5,
       }}
     >
-      <View style={{
-        marginHorizontal: 10,
-      }}>{icon}</View>
+      <View
+        style={{
+          marginHorizontal: 10,
+        }}
+      >
+        {icon}
+      </View>
       <Text style={styles.linkTitle}>{text}</Text>
       <Pressable style={styles.linkButton} onPress={() => console.warn("Ver")}>
         <Text style={styles.linkButtonText}>VER</Text>
