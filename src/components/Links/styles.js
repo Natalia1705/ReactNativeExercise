@@ -1,29 +1,25 @@
 import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
-   cardTitle: {
-    fontSize: 18,
-    marginVertical: 5,
-    marginHorizontal: 15,
-  },
-  cardDescription: {
+  linkTitle: {
     fontSize: 14,
-    marginVertical: 5,
-    marginHorizontal: 15,
-    color: "#666666",
   },
-  cardButton: {
-    backgroundColor: "#EC4C60",
-    width: 94,
+  linkButton: {
+    width: 60,
     alignItems: "center",
     borderRadius: 100,
     marginHorizontal: 15,
     marginTop: 5,
-    marginBottom:10,
+    marginBottom: 10,
     padding: 7,
+    position: "absolute",
+    right: 0,
+    borderColor: "#E5E5E5",
+    borderStyle: "solid",
+    borderWidth: 1,
   },
-  cardButtonText: {
-    color: "#FFFFFF",
+  linkButtonText: {
+    color: "#EC4C60",
   },
 });
 

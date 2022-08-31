@@ -1,4 +1,4 @@
-import { Text, View, Image, Pressable } from "react-native";
+import { Text, View, Image, Pressable, } from "react-native";
 import styles from "./styles";
 
 const Card = (props) => {
@@ -8,6 +8,8 @@ const Card = (props) => {
       style={{
         width: 335,
         height: 320,
+        marginTop: 15,
+        marginBottom: 20,
       }}
     >
       <Image

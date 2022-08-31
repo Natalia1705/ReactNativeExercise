@@ -1,29 +1,31 @@
 import { Text, View, Image, Pressable } from "react-native";
 import styles from "./styles";
 
-const Card = (text) => {
+const Links = ({ text, icon }) => {
   return (
     <View
       style={{
         width: 335,
-        height: 165,
+        height: 61,
         borderColor: "#E5E5E5",
-        borderBottomLeftRadius: 11,
-        borderBottomRightRadius: 11,
+        borderRadius: 11,
         borderWidth: 1,
         display: "flex",
-        justifyContent: "center",
+        flexDirection: "row",
+        alignItems: "center",
+        position: "relative",
+        marginVertical: 5,
       }}
     >
-      <Text style={styles.cardTitle}>{text}</Text>
-      <Pressable
-        style={styles.cardButton}
-        onPress={() => console.warn("Ver")}
-      >
-        <Text style={styles.cardButtonText}>VER</Text>
+      <View style={{
+        marginHorizontal: 10,
+      }}>{icon}</View>
+      <Text style={styles.linkTitle}>{text}</Text>
+      <Pressable style={styles.linkButton} onPress={() => console.warn("Ver")}>
+        <Text style={styles.linkButtonText}>VER</Text>
       </Pressable>
     </View>
   );
 };
 
-export default Card;
+export default Links;

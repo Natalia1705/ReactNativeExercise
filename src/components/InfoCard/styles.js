@@ -2,12 +2,14 @@ import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
    cardTitle: {
-    fontSize: 18,
+    fontSize: 14,
+    lineHeight:20,
     marginVertical: 5,
     marginHorizontal: 15,
+    color:"#000000",
   },
   cardDescription: {
-    fontSize: 14,
+    fontSize: 12,
     marginVertical: 5,
     marginHorizontal: 15,
     color: "#666666",
@@ -19,7 +21,6 @@ const styles = StyleSheet.create({
     borderRadius: 100,
     marginHorizontal: 15,
     marginTop: 5,
-    marginBottom:10,
     padding: 7,
   },
   cardButtonText: {

@@ -6,7 +6,8 @@ const InfoCard = () => {
     <View
       style={{
         width: 335,
-        height: 320,
+        height: 270,
+        marginTop:15,
       }}
     >
       <Image
@@ -15,7 +16,7 @@ const InfoCard = () => {
         }}
         style={{
           width: 335,
-          aspectRatio: 7 / 3,
+          aspectRatio: 8 / 3,
           resizeMode: "cover",
           borderTopLeftRadius: 11,
           borderTopRightRadius: 11,
@@ -24,7 +25,7 @@ const InfoCard = () => {
       <View
         style={{
           width: 335,
-          height: 165,
+          height: 132,
           borderColor: "#E5E5E5",
           borderBottomLeftRadius: 11,
           borderBottomRightRadius: 11,

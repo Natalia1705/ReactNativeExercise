@@ -1,24 +1,22 @@
 import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
-  searchButton: {
+  linkButtonButton: {
     height: 40,
-    width: "90%",
+    width: 335,
     borderColor: "#E5E5E5",
-    borderStyle:'solid',
+    borderStyle: "solid",
     borderWidth: 1,
     borderRadius: 100,
     flexDirection: "row",
     justifyContent: "center",
     alignItems: "center",
-    alignSelf:"center",
-    position: "absolute",
-    top: 50,
-    zIndex: 100,
+    alignSelf: "center",
+    marginVertical: 15,
   },
 
-  searchButtonText: {
-    color: "#666666",
+  linkButtonButtonText: {
+    color: "#EC4C60",
     fontSize: 14,
     lineHeight: 23,
   },
