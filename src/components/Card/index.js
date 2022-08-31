@@ -1,7 +1,8 @@
-import { Text, View, Image, Pressable, } from "react-native";
+import { Text, View, Image, Pressable } from "react-native";
 import styles from "./styles";
 
 const Card = (props) => {
+
   const card = props.card;
   return (
     <View

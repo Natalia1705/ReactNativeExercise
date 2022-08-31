@@ -1,6 +1,5 @@
 import { ScrollView, Text, View } from "react-native";
 import Card from "../../components/Card";
-import CardCarousel from "../../components/CardCarousel";
 import InfoCard from "../../components/InfoCard";
 import Search from "../../components/Search";
 import Links from "../../components/Links";
@@ -15,6 +14,7 @@ import styles from "./styles";
 
 const Main = (props) => {
   const card = props.card;
+  const card1 = feed[0];
   return (
     <ScrollView>
       <View
