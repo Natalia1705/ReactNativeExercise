@@ -9,7 +9,7 @@ const Card = (props) => {
         width: 335,
         height: 320,
         marginTop: 15,
-        marginBottom: 20,
+        marginBottom: 5,
         marginHorizontal: 4,
       }}
     >
