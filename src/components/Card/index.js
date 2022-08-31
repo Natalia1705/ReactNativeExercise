@@ -1,15 +1,21 @@
-import { Text, View, Image, Pressable } from "react-native";
+import {
+  Text,
+  View,
+  Image,
+  Pressable,
+  useWindowDimensions,
+} from "react-native";
 import styles from "./styles";
 
 const Card = (props) => {
   const card = props.card;
+  const width = useWindowDimensions().width;
   return (
     <View
       style={{
-        width: 335,
+        width: width - 10,
         height: 320,
         marginTop: 15,
-        marginBottom: 20,
         marginHorizontal: 4,
       }}
     >

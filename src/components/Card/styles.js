@@ -1,7 +1,7 @@
 import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
-   cardTitle: {
+  cardTitle: {
     fontSize: 18,
     marginVertical: 5,
     marginHorizontal: 15,
@@ -15,12 +15,12 @@ const styles = StyleSheet.create({
   cardButton: {
     backgroundColor: "#EC4C60",
     width: 94,
-    alignItems: "center",
     borderRadius: 100,
     marginHorizontal: 15,
     marginTop: 5,
-    marginBottom:10,
+    marginBottom: 10,
     padding: 7,
+    alignItems: "center",
   },
   cardButtonText: {
     color: "#FFFFFF",
