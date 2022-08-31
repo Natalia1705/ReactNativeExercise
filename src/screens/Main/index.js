@@ -1,3 +1,4 @@
+import "react-native-gesture-handler";
 import { ScrollView, Text, View } from "react-native";
 
 import InfoCard from "../../components/InfoCard";
@@ -7,7 +8,6 @@ import Carousel from "../../components/Carousel";
 import MaletasIcon from "../../../assets/maletas.svg";
 import GroupIcon from "../../../assets/group.svg";
 import Arrow from "../../../assets/arrow.svg";
-import feed from "../../../assets/data/feed";
 import styles from "./styles";
 
 const Main = (props) => {

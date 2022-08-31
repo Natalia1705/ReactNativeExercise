@@ -1,15 +1,12 @@
 import { SafeAreaView, StatusBar } from "react-native";
-
-// import Main from "./src/screens/Main";
-import SearchResults from "./src/screens/SearchResults";
+import Router from "./src/navigation/Router";
 
 export default function App() {
   return (
     <>
       <StatusBar />
-      <SafeAreaView>
-        {/* <Main /> */}
-        <SearchResults />
+      <SafeAreaView style={{ flex: 1 }}>
+        <Router />
       </SafeAreaView>
     </>
   );
