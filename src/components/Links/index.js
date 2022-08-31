@@ -6,7 +6,7 @@ const Links = ({ text, icon }) => {
     <View
       style={{
         width: 335,
-        height: 61,
+        height: 50,
         borderColor: "#E5E5E5",
         borderRadius: 11,
         borderWidth: 1,

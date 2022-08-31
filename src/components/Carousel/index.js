@@ -1,8 +1,7 @@
-import { Text, View, FlatList } from "react-native";
+import { View, FlatList } from "react-native";
 
 import feed from "../../../assets/data/feed";
 import Card from "../Card";
-import styles from "./styles";
 
 const Carousel = () => {
   return (

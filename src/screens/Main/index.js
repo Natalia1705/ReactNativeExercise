@@ -1,21 +1,16 @@
 import { ScrollView, Text, View } from "react-native";
-import Card from "../../components/Card";
+
 import InfoCard from "../../components/InfoCard";
 import Search from "../../components/Search";
 import Links from "../../components/Links";
-import feed from "../../../assets/data/feed";
-
+import Carousel from "../../components/Carousel";
 import MaletasIcon from "../../../assets/maletas.svg";
 import GroupIcon from "../../../assets/group.svg";
 import Arrow from "../../../assets/arrow.svg";
-
+import feed from "../../../assets/data/feed";
 import styles from "./styles";
-import Carousel from "../../components/Carousel";
-
 
 const Main = (props) => {
-  const card = props.card;
-  const card1 = feed[0];
   return (
     <ScrollView>
       <View

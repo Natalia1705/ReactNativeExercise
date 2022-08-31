@@ -10,7 +10,7 @@ const Search = () => {
         style={styles.linkButtonButton}
         onPress={() => console.warn("Search Btn clicked")}
       >
-         <SearchIcon width={25} height={25} fill={"red"} /> 
+         <SearchIcon width={25} height={25} fill={"#EC4C60"} /> 
         <Text style={styles.linkButtonText}>Busca tu proximo destino</Text>
       </Pressable>
     </View>
