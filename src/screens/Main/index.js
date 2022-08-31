@@ -43,7 +43,7 @@ const Main = (props) => {
             alignItems: "flex-start",
             width: "100%",
             height: 50,
-            marginVertical:10,
+            marginVertical: 10,
           }}
         >
           <View
@@ -57,7 +57,12 @@ const Main = (props) => {
               height: 20,
             }}
           >
-            <Text style={styles.allInfoText}>Ver toda la información</Text>
+            <Text
+              style={styles.allInfoText}
+              onPress={() => console.warn("Ver toda la información")}
+            >
+              Ver toda la información
+            </Text>
             <Arrow />
           </View>
         </View>

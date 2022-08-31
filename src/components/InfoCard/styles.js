@@ -1,12 +1,12 @@
 import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
-   cardTitle: {
+  cardTitle: {
     fontSize: 14,
-    lineHeight:20,
+    lineHeight: 20,
     marginVertical: 5,
     marginHorizontal: 15,
-    color:"#000000",
+    color: "#000000",
   },
   cardDescription: {
     fontSize: 12,
@@ -25,6 +25,9 @@ const styles = StyleSheet.create({
   },
   cardButtonText: {
     color: "#FFFFFF",
+  },
+  cardBoldText: {
+    fontWeight: "bold",
   },
 });
 

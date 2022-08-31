@@ -1,10 +1,12 @@
-import { View, Text, FlatList } from "react-native";
+import { View, Text, FlatList, Pressable } from "react-native";
+import { useNavigation } from "@react-navigation/native";
 
 import CloseIcon from "../../../assets/close.svg";
 import searchData from "../../../assets/data/search";
 import styles from "./styles";
 
 const SearchResults = () => {
+  const navigation = useNavigation();
   return (
     <View>
       <View
@@ -19,33 +21,23 @@ const SearchResults = () => {
         }}
       >
         <Text style={styles.title}>Elige tu nuevo destino</Text>
-        <CloseIcon width={25} height={25} />
+        <CloseIcon
+          width={25}
+          height={25}
+          onPress={() => navigation.navigate("Main")}
+        />
       </View>
       <FlatList
         data={searchData}
         renderItem={({ item }) => (
-          <View
+          <Pressable
             key={item.id}
-            style={{
-              width: "90%",
-              height: 58,
-              borderColor: "#E5E5E5",
-              borderRadius: 5,
-              borderWidth: 1,
-              display: "flex",
-              flexDirection: "row",
-              alignItems: "center",
-              justifyContent: "space-between",
-              alignSelf: "center",
-              position: "relative",
-              padding: 15,
-              marginVertical: 5,
-
-            }}
+            style={styles.destinationBotton}
+            onPress={() => console.warn(item.destination)}
           >
             <Text style={styles.destinationText}>{item.destination}</Text>
             <Text style={styles.acronymText}>{item.acronym}</Text>
-          </View>
+          </Pressable>
         )}
       />
     </View>

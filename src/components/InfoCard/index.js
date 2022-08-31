@@ -7,7 +7,7 @@ const InfoCard = () => {
       style={{
         width: 335,
         height: 270,
-        marginTop:15,
+        marginTop: 15,
       }}
     >
       <Image
@@ -38,7 +38,7 @@ const InfoCard = () => {
         <Text style={styles.cardDescription}>
           Utiliza nuestra nueva herramienta para consultar los destinos a los
           que puedes viajar y obtener detalles sobre los requisitos de entrada.
-          Conoce más
+          <Text  style={styles.cardBoldText} onPress={() => console.warn("Conoce más")}> Conoce más</Text>
         </Text>
       </View>
     </View>
