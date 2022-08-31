@@ -3,7 +3,7 @@ import { StyleSheet } from "react-native";
 const styles = StyleSheet.create({
   cardTitle: {
     fontSize: 18,
-    marginVertical: 5,
+    marginVertical: 6,
     marginHorizontal: 15,
   },
   cardDescription: {

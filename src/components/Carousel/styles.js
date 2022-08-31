@@ -1,7 +1,7 @@
 import { StyleSheet } from "react-native";
 
 const DOT_SIZE = 6;
-const DOT_SPACING = 0;
+const DOT_SPACING = 6;
 
 const styles = StyleSheet.create({
   dot: {

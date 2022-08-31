@@ -13,10 +13,10 @@ const Card = (props) => {
   return (
     <View
       style={{
-        width: width - 10,
+        width: width - 20,
         height: 320,
         marginTop: 15,
-        marginHorizontal: 4,
+        marginHorizontal: 10,
       }}
     >
       <Image
@@ -24,7 +24,7 @@ const Card = (props) => {
           uri: card.image,
         }}
         style={{
-          width: 335,
+          width: width - 20,
           aspectRatio: 7 / 3,
           resizeMode: "cover",
           borderTopLeftRadius: 11,
@@ -33,7 +33,7 @@ const Card = (props) => {
       />
       <View
         style={{
-          width: 335,
+          width: width - 20,
           height: 165,
           borderColor: "#E5E5E5",
           borderBottomLeftRadius: 11,
