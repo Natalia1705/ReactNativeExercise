@@ -11,14 +11,16 @@ const Carousel = () => {
   return (
     <View
       style={{
-        width: width + 20,
+
+        width,
+        marginHorizontal: 15,
       }}
     >
       <Animated.FlatList
         horizontal={true}
         data={feed}
         showsHorizontalScrollIndicator={false}
-        snapToInterval={width - 10}
+        snapToInterval={width - 10 }
         decelerationRate="fast"
         snapToAligment={"center"}
         onScroll={Animated.event(
